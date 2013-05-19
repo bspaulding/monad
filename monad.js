@@ -102,7 +102,7 @@ function MONAD(modifier) {
     };
     unit.lift = function (name, func) {
 
-// Add a method to the prototye that calls bind with the func. If the value
+// Add a method to the prototype that calls bind with the func. If the value
 // returned by the func is not a monad, then make a monad.
 
         prototype[name] = function () {
